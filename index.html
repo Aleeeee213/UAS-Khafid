@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kursus Kopi - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+    </div>
+    <div class="nav-right">
+
+      <a href="daftar.html" class="active"><span class="icon">📝</span> Daftar Kursus</a>
+
+    </div>
+  </div>
+
+  <!-- Konten utama -->
+  <main class="konten">
+    <h1 id="kursus">Selamat Datang di Kursus Barista Profesional KopiKapid!</h1>
+    <p class="deskripsi">
+      Belajar menjadi barista handal langsung dari ahlinya!  
+      Saya <strong>Muhammad Khafid</strong>, pemilik & pengajar di Kursus Kopikapid.  
+      Hubungi saya: 0815-1468-9084
+    </p>
+
+    <div class="media">
+      <img src="https://d1r9hss9q19p18.cloudfront.net/uploads/2015/09/barista-training-5.jpg" alt="Foto Barista" class="foto-barista">
+      <video class="video-barista" controls src="vidio-barista.mp4"></video>
+    </div>
+
+    <div id="weather"></div>
+  </main>
+
+  <!-- Musik latar -->
+  <audio src="coffee-shop-bgm.mp3" autoplay loop></audio>
+
+  <script>
+    function showTime() {
+      const now = new Date();
+      document.getElementById("weather").innerText =
+        "Waktu sekarang: " + now.toLocaleTimeString();
+    }
+    setInterval(showTime, 1000);
+    showTime();
+  </script>
+</body>
+</html>

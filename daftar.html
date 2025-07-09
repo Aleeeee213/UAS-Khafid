@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Daftar Kursus</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="index.html"><span class="icon">☕</span> Home</a>
+      <a href="daftar.html" class="active"><span class="icon">📝</span> Daftar Kursus</a>
+      <a href="pilih.html"><span class="icon">📅</span> Pilih Jadwal</a>
+    </nav>
+
+    <h2>Formulir Pendaftaran Kursus Kopi</h2>
+    
+    <form id="formDaftar">
+      <label for="nik">NIK:</label>
+      <input type="text" id="nik" name="nik" required />
+
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required />
+
+      <label for="alamat">Alamat:</label>
+      <textarea id="alamat" name="alamat" rows="3"></textarea>
+
+      <label for="jk">Jenis Kelamin:</label>
+      <select id="jk" name="jk">
+        <option value="Laki-laki">Laki-laki</option>
+        <option value="Perempuan">Perempuan</option>
+      </select>
+
+      <button type="submit">Daftar</button>
+    </form>
+
+    <div id="hasilDaftar"></div>
+    <div id="weather"></div>
+  </div>
+
+  <script>
+    document.getElementById("formDaftar").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const d = new FormData(this);
+      document.getElementById("hasilDaftar").innerHTML = `
+        <h3>Data Pendaftaran:</h3>
+        <p><strong>NIK:</strong> ${d.get("nik")}</p>
+        <p><strong>Nama:</strong> ${d.get("nama")}</p>
+        <p><strong>Alamat:</strong> ${d.get("alamat")}</p>
+        <p><strong>Jenis Kelamin:</strong> ${d.get("jk")}</p>
+      `;
+    });
+
+    function showTime() {
+      document.getElementById("weather").innerText =
+        "Waktu: " + new Date().toLocaleTimeString();
+    }
+    setInterval(showTime, 1000);
+    showTime();
+  </script>
+</body>
+</html>

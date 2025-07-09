@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pilih Jadwal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="index.html"><span class="icon">☕</span> Home</a>
+      <a href="daftar.html"><span class="icon">📝</span> Daftar Kursus</a>
+      <a href="pilih.html" class="active"><span class="icon">📅</span> Pilih Jadwal</a>
+    </nav>
+
+    <h2>Pilih Jadwal Kursus Kopi</h2>
+
+    <form id="formJadwal">
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required />
+
+      <label for="hari">Hari:</label>
+      <select id="hari" name="hari">
+        <option>Senin</option>
+        <option>Selasa</option>
+        <option>Rabu</option>
+        <option>Kamis</option>
+        <option>Jumat</option>
+      </select>
+
+      <label for="waktu">Jam:</label>
+      <select id="waktu" name="waktu">
+        <option>08.00 – 10.00</option>
+        <option>10.00 – 12.00</option>
+        <option>13.00 – 15.00</option>
+        <option>15.00 – 17.00</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="hasilJadwal"></div>
+    <div id="weather"></div>
+
+    <a href="jadwal.pdf" download class="download-link">📄 Download Jadwal</a>
+  </div>
+
+  <script>
+    document.getElementById("formJadwal").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const d = new FormData(this);
+      document.getElementById("hasilJadwal").innerHTML = `
+        <h3>Jadwal Dipilih:</h3>
+        <p><strong>Nama:</strong> ${d.get("nama")}</p>
+        <p><strong>Hari:</strong> ${d.get("hari")}</p>
+        <p><strong>Jam:</strong> ${d.get("waktu")}</p>
+      `;
+    });
+
+    function showTime() {
+      document.getElementById("weather").innerText =
+        "Waktu: " + new Date().toLocaleTimeString();
+    }
+    setInterval(showTime, 1000);
+    showTime();
+  </script>
+</body>
+</html>

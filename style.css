@@ -1,0 +1,368 @@
+body {
+  background-color: #fbe7a1;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #f5e6a1;
+  font-family: Arial, sans-serif;
+}
+
+.nav-left a,
+.nav-right a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #4b2e2e;
+  font-weight: bold;
+}
+
+/* Judul */
+h1 {
+  font-family: 'Pacifico', cursive;
+  color: #4b2e2e;
+}
+
+/* Paragraf */
+.deskripsi {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Gambar & Video */
+.media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.foto-barista {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.video-barista {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Jam */
+#weather {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+
+/* Reset dan dasar */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff8dc;
+  margin: 0;
+  padding: 20px;
+  color: #4a3c1a;
+}
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  background-color: #fffbea;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* Navigasi */
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+}
+
+nav a {
+  color: #6a4b1c;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #cbb47f;
+  color: #fff8dc;
+}
+
+nav a.active {
+  background-color: #a67c00;
+  color: white;
+}
+
+.icon {
+  font-size: 18px;
+}
+
+/* Judul */
+h2 {
+  text-align: center;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #5a3c00;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 4px;
+  display: block;
+  color: #553c00;
+}
+
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 2px solid #cdb46c;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #a67c00;
+  background-color: #fffde7;
+}
+
+button {
+  padding: 12px;
+  background-color: #a67c00;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #7a5900;
+}
+
+/* Hasil pendaftaran */
+#hasilDaftar {
+  margin-top: 30px;
+  background-color: #fff3b0;
+  padding: 18px 20px;
+  border-radius: 10px;
+  color: #5a3c00;
+  font-weight: 600;
+  box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+#hasilDaftar h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+/* Waktu */
+#weather {
+  margin-top: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: #755200;
+  font-size: 16px;
+}
+
+
+
+
+/* Reset dan dasar */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff8dc;
+  margin: 0;
+  padding: 20px;
+  color: #4a3c1a;
+}
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  background-color: #fffbea;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* Navigasi */
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+}
+
+nav a {
+  color: #6a4b1c;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #cbb47f;
+  color: #fff8dc;
+}
+
+nav a.active {
+  background-color: #a67c00;
+  color: white;
+}
+
+.icon {
+  font-size: 18px;
+}
+
+/* Judul */
+h2 {
+  text-align: center;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #5a3c00;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 4px;
+  display: block;
+  color: #553c00;
+}
+
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 2px solid #cdb46c;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #a67c00;
+  background-color: #fffde7;
+}
+
+button {
+  padding: 12px;
+  background-color: #a67c00;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #7a5900;
+}
+
+/* Hasil jadwal */
+#hasilJadwal {
+  margin-top: 30px;
+  background-color: #fff3b0;
+  padding: 18px 20px;
+  border-radius: 10px;
+  color: #5a3c00;
+  font-weight: 600;
+  box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+#hasilJadwal h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+/* Waktu */
+#weather {
+  margin-top: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: #755200;
+  font-size: 16px;
+}
+
+/* Link download */
+.download-link {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 10px 16px;
+  background-color: #a67c00;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.download-link:hover {
+  background-color: #7a5900;
+}
